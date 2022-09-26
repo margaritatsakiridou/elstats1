@@ -131,7 +131,7 @@ divisions_completions <- function (staff, course1, course2, date) {
 
   both %>% filter(area =="Data Capability"| area =="Economic Social and Environmental"| area =="Health Population and Methods") %>%
     group_by(division) %>% summarise(course1 = sum(course1), course2 = sum(course2), both=sum(both)) %>%
-    mutate(course1_prc = round(course1/n, 2), course2_prc = round(course2/n,2), both_prc=round(both/n,2)) %>%
+    mutate(course1_prc = round(sum(course1)/n, 2), course2_prc = round(sum(course2)/n,2), both_prc=round(sum(both)/n,2))%>%
     select(1,5,2,6,3,7,4,8)
 }
 
