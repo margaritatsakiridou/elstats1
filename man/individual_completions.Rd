@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions1.r
 \name{individual_completions}
 \alias{individual_completions}
-\title{Completion rate for each area}
+\title{Completion rate for each employee}
 \usage{
 individual_completions(staff, course1, course2, date)
 }
@@ -16,10 +16,10 @@ individual_completions(staff, course1, course2, date)
 \item{date}{cut off date as string in the format "YYYY-MM-DD"}
 }
 \value{
-a dataframe with information on completion
+a dataframe with information on completion per employee
 }
 \description{
-Completion rate for each area
+Completion rate for each employee
 }
 \examples{
 individual_completions(staff = staff, course1 = course1, course2 = course2, date = date)
